@@ -1,0 +1,14 @@
+#main {
+  width: 80%;
+  margin: auto;
+}
+
+.add_ninja_form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.red {
+  color: red;
+}
