@@ -3,13 +3,14 @@ from flask_app import app
 from flask_app.models import
 
  CREATE model
+    #db = ' '
     @classmethod
     def create_dojo(cls, data):
         query= '''
         Insert INTO dojos (name)
         VALUES (%(name)s)
         ;'''
-        return connectToMySQL('dojos_and_ninjas_schema').query_db(query,data)
+        return connectToMySQL('cls.db').query_db(query,data)
 
 
 #READ model
